@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+/*
+  ALL
+ */
+
+body {
+  font-family: "Rubik","Noto Sans Japanese";
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 3em;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+ /*  About */
+
+ .prof {
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   object-fit: cover;
+   /* 文章の先頭と揃っているため真ん中に */
+   margin-left: 20%;
+   margin-top: 10%;
+ }
+
+ .about {
+   width: 60%;
+   margin: 0 auto;
+   padding-left: 10%;
+ }
+
+ .about p {
+   text-align: justify;
+   text-justify: inter-ideograph;
+   padding-left: 10%;
+ }
+
+ .about a {
+   color: black;
+   text-decoration: none;
+ }
+
+ .about h3 {
+   clear: both;
+   text-align: center;
+ }
+
+/*
+  ALL-SNS button
+ */
+
+.sns-button li {
+   display: inline-block;
+   font-size: 20px;
+   padding: 0 10px;
+ }
+
+.fab {
+  color: black;
+}
+
+a .fa-github:hover{
+  color: #6cc644;
+  transition: 0.4s;
+}
+
+a .fa-twitter:hover{
+  color: #1da1f2;
+  transition: 0.4s;
+}
+
+a .fa-instagram:hover{
+  color: #833ab4;
+  transition: 0.4s;
+}
+
+a .fa-facebook:hover{
+  color: #3b5998;
+  transition: 0.4s;
+}
+
+/*
+  SIDE BAR
+ */
+
+.side-menu {
+  width: 320px;
+  top: 0px;
+  /*　fixedはz絶対配置で　表示される基準は左上　z-indexは表示順、100が最大
+  */
+  position: fixed;
+  z-index: 100;
+}
+
+.side-menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.side-menu a:hover{
+  opacity: 0.6;
+  transition: 0.4s;
+}
+
+#global-nav li {
+  list-style-type: none;
+  font-size: 50px;
+  padding-top: 10px;
+}
+
+/*  Work */
+
+.seikabutu01 {
+  margin: 0 auto;
+}
+
+.seikabutu01 p{
+  display:inline-block;
+  vertical-align:top;
+  line-height:30px
+}
