@@ -1,0 +1,19 @@
+/* for Tablet  */
+@media all and (max-width: 1000px) {
+  .background-image {
+    height: 100%;
+    width: 100%;
+    min-width: 500px;
+    min-height: 300px;
+  }
+}
+
+/*  for Smartphone */
+@media all and (max-width: 670px) {
+  .side-menu {
+    display: none;
+  }
+  .menu-icon {
+    display:block;
+  }
+}

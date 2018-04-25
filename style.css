@@ -8,6 +8,17 @@ body {
   font-family: "Rubik","Noto Sans Japanese";
 }
 
+.contents {
+  text-align: center;
+  padding: 200px 300px;
+  position: absolute;
+}
+
+.background-image {
+  height: 500px;
+  width: 700px;
+}
+
 h1 {
   font-weight: 500;
   font-size: 3em;
@@ -124,4 +135,15 @@ a .fa-facebook:hover{
   display:inline-block;
   vertical-align:top;
   line-height:30px
+}
+
+/* menu-icon*/
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  /* displayをnoneに指定してください */
+  display:none;  
 }
