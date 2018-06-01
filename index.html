@@ -5,17 +5,57 @@
 <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link href="normalize.css" rel="stylesheet">
 <link href="style.css" rel="stylesheet">
 <link href="responsive.css" rel="stylesheet">
+<script src="https:///use.fontawesome.com/926fe18a63.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script >
+  $(function(){
+    $(".headC").click(function(){
+      $(".headB").slideToggle();
+    });
+  });
+</script>
 <html>
   <head>
     <title>Kakeru Kaneko</title>
   </head>
   <body>
+    <header class="head-color">
+    <div class="container">
+      <div class="container-small">
+        <a href="index.html" class="headA">KANEKO</a>
+
+        <button type="button" class="headC">
+          <span class="fa fa-bars" title="MENU"></span>
+        </button>
+      </div>
+
+      <nav class="headB">
+        <ul>
+          <li><a href="./about">About</a></li>
+          <li><a href="./work">Work</a></li>
+          <li><a href="./blog">Blog</a></li>
+          <li><a href="./contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+    <section class="conA">
+    <div class="container">
+      <img src="photo/background-image.jpg" class="bk-img">
+    </div>
+    </section>
+
+    <!--
     <div class="contents">
       <img src="photo/background-image.jpg" class="background-image">
     </div>
+   -->
+   <!--
     <p>製作中</p>
      <span class="fa fa-bars menu-icon"></span>
     <div class="side-menu">
@@ -42,5 +82,6 @@
         </div>
       </header>
     </div>
+  -->
   </body>
 </html>
