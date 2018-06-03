@@ -54,7 +54,7 @@ body {
 	justify-content: center;
 	height: 100vh;
 	min-height: 450px;
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(photo/background-image.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(photo/background-image2.jpg);
 	background-position: center;
 	background-size: cover;
 	color: #fff;
@@ -539,18 +539,27 @@ header {
 }
 
 @media (min-width: 768px) {
-	header .container {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		max-width: 1000px;
-		max-width: var(--large-width);
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.headB ul {
-		display: flex;
-	}
+  .headB {
+    width: 320px;
+    top: 0px;
+    /*　fixedはz絶対配置で　表示される基準は左上　z-indexは表示順、100が最大　*/
+  }
+
+  .headB a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .headB a:hover{
+    opacity: 0.6;
+    transition: 0.4s;
+  }
+
+  .headB li {
+    list-style-type: none;
+    font-size: 50px;
+    padding-top: 10px;
+  }
 }
 
 /* ヘッダーC: トグルボタン */
@@ -975,6 +984,32 @@ header {
 
 .head-color .headC {
 	color: inherit;
+}
+
+/* アレンジ: ヘッダーとヒーローイメージを一体化 */
+.head-hero {
+  background-color: transparent;
+  color: #000;
+}
+
+.head-hero .headA {
+  background-color: transparent;
+  color: inherit;
+}
+
+.head-hero .headC {
+  color: inherit;
+  opacity: 1;
+}
+
+@media (max-width: 767px) {
+	.head-hero .headB {
+		background-color: rgba(0,0,0,0.6);
+	}
+
+  .head-hero {
+    color: #fff;
+  }
 }
 
 /* アレンジ: ヘッダーを画面上部に固定 */
