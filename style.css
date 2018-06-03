@@ -40,6 +40,9 @@ body {
 	font-family: 'Rubik','Noto Sans Japanese',
 			'Hiragino Kaku Gothic Pro',
 			sans-serif;
+}
+
+body .top {
   background-color: #000;
 }
 
@@ -548,6 +551,7 @@ header {
   .headB a {
     color: black;
     text-decoration: none;
+    font-size: 40px;
   }
 
   .headB a:hover{
@@ -1023,7 +1027,39 @@ header {
 }
 
 
+/* About */
 
+.prof {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  文章の先頭と揃っているため真ん中に
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+.about {
+  width: 60%;
+  margin: 0 auto;
+  padding-left: 10%;
+}
+
+.about p {
+  text-align: justify;
+  text-justify: inter-ideograph;
+  padding-left: 10%;
+}
+
+.about a {
+  color: black;
+  text-decoration: none;
+}
+
+.about h3 {
+  clear: both;
+  text-align: center;
+}
 
 
 

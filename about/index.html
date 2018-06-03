@@ -1,12 +1,23 @@
 <!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link href="../normalize.css" rel="stylesheet">
 <link href="../style.css" rel="stylesheet">
+<script src="https:///use.fontawesome.com/926fe18a63.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script >
+  $(function(){
+    $(".headC").click(function(){
+      $(".headB").slideToggle();
+    });
+  });
+</script>
+<html>
   <head>
     <title>Kakeru Kaneko</title>
   </head>
@@ -38,29 +49,26 @@
         <p>建築は安藤忠雄とガウディが好き。　スペインに行き実際にサグラダファミリアを見に行った。</p>
       </div>
     </div>
-    <div class="side-menu">
-      <header id="top-head">
-        <div class="inner">
-            <div id="mobile-head">
-                <h1 class="logo">logo</h1>
-                <div id="nav-toggle">
-                    <div>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-            <nav id="global-nav">
-                <ul>
-                    <li><a href="./">About</a></li>
-                    <li><a href="../work">Work</a></li>
-                    <li><a href="../blog">Blog</a></li>
-                    <li><a href="../contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-      </header>
+
+    <header class="head-hero">
+    <div class="container">
+      <div class="container-small">
+        <a href="../index.html" class="headA">KANEKO</a>
+
+        <button type="button" class="headC">
+          <span class="fa fa-bars" title="MENU"></span>
+        </button>
+      </div>
+
+      <nav class="headB">
+        <ul>
+          <li><a href="./">About</a></li>
+          <li><a href="./work">Work</a></li>
+          <li><a href="./blog">Blog</a></li>
+          <li><a href="./contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+    </header>
   </body>
 </html>
