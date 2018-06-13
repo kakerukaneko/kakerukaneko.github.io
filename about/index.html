@@ -1,74 +1,96 @@
 <!DOCTYPE html>
+<html lang="ja">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-<link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link href="../normalize.css" rel="stylesheet">
-<link href="../style.css" rel="stylesheet">
-<script src="https:///use.fontawesome.com/926fe18a63.js"></script>
+<meta charset="UTF-8">
+<title>サンプル</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+
+<style>
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+</style>
+
+<script src="https://use.fontawesome.com/926fe18a63.js"></script>
+
 <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-<script >
-  $(function(){
-    $(".headC").click(function(){
-      $(".headB").slideToggle();
-    });
-  });
+<script>
+$(function(){
+	$(".headC").click(function(){
+		$(".headB").slideToggle();
+	});
+});
 </script>
-<html>
-  <head>
-    <title>Kakeru Kaneko</title>
-  </head>
-  <body>
-    <div class="contents">
-      <div class="about">
-        <img class="prof" src="../photo/prof.jpg">
-        <ul class="sns-button">
-          <li><h2>金子 翔 / Kakeru Kaneko</h2></li>
-          <li><a href="https://github.com/kakerukaneko" class="menu-icon"><i class="fab fa-github"></i></a></li>
-          <li><a href="https://twitter.com/okinaotu" class="menu-icon"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="https://www.instagram.com/kakerukaneko/" class="menu-icon"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="https://www.facebook.com/kakelaser" class="menu-icon"><i class="fab fa-facebook"></i></a></li>
-        </ul>
-        <p>1995年6月24日生まれ 東大阪市出身</p>
-        <p>プログラミングスキルは HTML CSS JavaScript Java PHP Ruby MySQLを一通り学びました。</p>
-        <p>なかでも、PHPを触っていた時期が長くサーバーサイドが得意です。 独学でRubyonRailsも勉強しています。</p>
-        <h3>経歴</h3>
-        <p>2008年 中学校入学を機に、DELLのデスクトップパソコンを購入してもらい インターネットにはまる。</p>
-        <p>2014年 高校卒業後は地元の町工場に就職、ネジを見ただけで名前が分かるようになる。</p>
-        <p>2017年 司馬遼太郎の「竜馬がゆく」を見て脱藩に憧れ、退職。自分が好きなインターネットを生業にしようと専門校でプログラミングを学ぶ。</p>
-        <p>2018年 現在、上京を目指しプログラムを勉強しながら、就職活動をしている。</p>
-        </br>
-        <h3>LIKE</h3>
-        <p>映画　音楽　建築　芸術　文学</p>
-        <p>好きな音楽はBill Evans <a href="https://www.youtube.com/watch?v=W3wq7ejawIA" class="menu-icon">「Waltz for Debby」<i class="fas fa-external-link-alt"></i></a>
-          、D'angelo<a href="https://www.youtube.com/watch?v=mcQ83tOZ4Wk" class="menu-icon">「Feel Like Makin' Love」<i class="fas fa-external-link-alt"></i></a></p>
-        <p>JAZZ SOUL ROCKに影響を受ける。</p>
-        <p>建築は安藤忠雄とガウディが好き。　スペインに行き実際にサグラダファミリアを見に行った。</p>
-      </div>
-    </div>
+</head>
+<body class="nohero">
 
-    <header class="head-hero">
-    <div class="container">
-      <div class="container-small">
-        <a href="../index.html" class="headA">KANEKO</a>
+<header>
+<div class="container">
+	<div class="container-small">
+		<a href="index.html" class="headA">LOGGER</a>
 
-        <button type="button" class="headC">
-          <span class="fa fa-bars" title="MENU"></span>
-        </button>
-      </div>
+		<button type="button" class="headC">
+			<span class="fa fa-bars" title="MENU"></span>
+		</button>
+	</div>
 
-      <nav class="headB">
-        <ul>
-          <li><a href="./">About</a></li>
-          <li><a href="./work">Work</a></li>
-          <li><a href="./blog">Blog</a></li>
-          <li><a href="./contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    </header>
-  </body>
+	<nav class="headB">
+		<ul>
+			<li><a href="index.html">トップ</a></li>
+			<li><a href="contents.html">コンテンツ</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li><a href="contact.html">お問い合わせ</a></li>
+		</ul>
+	</nav>
+</div>
+</header>
+
+
+<article class="post">
+<div class="container">
+
+	<h1>KANEKOについて</h1>
+  <p>1995年6月24日生まれ　東大阪市出身　神奈川県在住</p>
+  <p>プログラミングスキルは HTML CSS JavaScript Java PHP Ruby MySQLを一通り学びました。</p>
+  <p>なかでも、PHPを触っていた時期が長くサーバーサイドが好き 独学でRubyonRailsも勉強している。</p>
+
+  <h1>LIKE</h1>
+
+  <p>映画　音楽　建築　芸術　文学</p>
+<p>好きな音楽はBill Evans <a href="https://www.youtube.com/watch?v=W3wq7ejawIA" class="menu-icon">「Waltz for Debby」<i class="fas fa-external-link-alt"></i></a>
+  、D'angelo<a href="https://www.youtube.com/watch?v=mcQ83tOZ4Wk" class="menu-icon">「Feel Like Makin' Love」<i class="fas fa-external-link-alt"></i></a></p>
+<p>JAZZ SOUL ROCKに影響を受ける。</p>
+<p>建築は安藤忠雄とガウディが好き。　スペインに行き実際にサグラダファミリアを見に行った。</p>
+</div>
+</article>
+
+<aside class="history">
+<div class="container">
+	<div class="photo"></div>
+	<div class="text">
+		<h2>History</h2>
+		<table>
+		<tr>
+			<th>2014年</th>
+			<td>高校卒業後は地元の町工場に就職、ネジを見ただけで名前が分かるようになる。</td>
+		</tr>
+		<tr>
+			<th>2017年</th>
+			<td>司馬遼太郎の「竜馬がゆく」を見て脱藩に憧れ、退職。自分が好きなインターネットを生業にしようと専門校でプログラミングを学ぶ。</td>
+		</tr>
+		</table>
+	</div>
+</div>
+</aside>
+
+</body>
 </html>
