@@ -2,10 +2,10 @@
 
 /* 基本色 */
 :root {
-	--main-color: #5D9AB2;
-	--accent-color: #BF6A7A;
-	--dark-main-color: #2B5566;
-	--text-bright-color: #fff;
+	--main-color: #00afcc;
+	--accent-color: #0B8CE3;
+	--dark-main-color: #0B4FD9;
+	--text-bright-color: #000;
 	--icon-color: #fff;
 	--icon-bk-color: #ddd;
 	--gray-color: #ddd;
@@ -625,12 +625,13 @@ header {
 }
 
 .post p {
+	/* 大きいサイズなら、ちょうどよいが、スマフォサイズだと小さくなる*/
 	font-size: 1rem;
 	line-height: 2;
 }
 
 .post img {
-	max-width: 100%;
+	max-width: 50%;
 }
 
 /* コンテンツページ: パンくずリスト */
