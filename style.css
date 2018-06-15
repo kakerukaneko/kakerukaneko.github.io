@@ -3,7 +3,7 @@
 /* 基本色 */
 :root {
 	--main-color: #00afcc;
-	--accent-color: #0B8CE3;
+	--accent-color: #FF5033;
 	--dark-main-color: #0B4FD9;
 	--text-bright-color: #000;
 	--icon-color: #fff;
@@ -508,7 +508,7 @@ header {
 /* ヘッダーA: サイト名 */
 .headA {
 	display: inline-block;
-	line-height: 70px;
+	line-height: 60px;
 	padding-left: 20px;
 	padding-right: 20px;
 	background-color: #5D9AB2;
