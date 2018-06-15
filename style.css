@@ -503,8 +503,6 @@ header {
 
 .nohero header {
 	position: static;
-	border-bottom: solid 1px #ddd;
-	border-bottom: solid 1px var(--gray-color);
 }
 
 /* ヘッダーA: サイト名 */
@@ -537,32 +535,27 @@ header {
 	text-decoration: none;
 }
 
-.headB a:hover {
-	background-color: rgba(0,0,0,0.3);
-}
-
 @media (min-width: 768px) {
-  .headB {
-    width: 320px;
-    top: 0px;
-    /*　fixedはz絶対配置で　表示される基準は左上　z-indexは表示順、100が最大　*/
-  }
 
-  .headB a {
-    color: black;
-    text-decoration: none;
-    font-size: 40px;
-  }
+	header .container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 1000px;
+		max-width: var(--large-width);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.headB ul {
+		display: flex;
+		color: black;
+		text-decoration: none;
+	}
 
   .headB a:hover{
     opacity: 0.6;
     transition: 0.4s;
-  }
-
-  .headB li {
-    list-style-type: none;
-    font-size: 50px;
-    padding-top: 10px;
   }
 }
 
@@ -631,7 +624,7 @@ header {
 }
 
 .post img {
-	max-width: 50%;
+	max-width: 100%;
 }
 
 /* コンテンツページ: パンくずリスト */
@@ -982,7 +975,7 @@ header {
 
 /* アレンジ: ヘッダーの色 */
 .head-color {
-	background-color: black;
+	background-color: #00afcc;
 	color: var(--text-bright-color);
 }
 
@@ -1022,12 +1015,12 @@ header {
 }
 
 /* アレンジ: ヘッダーを画面上部に固定 */
-.head-fixed,
-.nohero .head-fixed {
+.head-color,
+.nohero .head-color {
 	position: fixed;
 }
 
-.nohero .head-fixed + * {
+.nohero .head-color + * {
 	margin-top: 70px;
 }
 
