@@ -704,7 +704,9 @@ header {
 	color: black;
 	text-decoration: none;
 }
-
+.menu-icon {
+	 font-size: 20px;
+}
 
 @media (min-width: 768px) {
 	.history .container {
