@@ -57,7 +57,7 @@ body .top {
 	justify-content: center;
 	height: 100vh;
 	min-height: 450px;
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(photo/background-image2.jpg);
+  background-color: var(--main-color);
 	background-position: center;
 	background-size: cover;
 	color: #fff;
@@ -1018,7 +1018,7 @@ header {
 
 /* アレンジ: ヘッダーを画面上部に固定 */
 .head-color,
-.nohero .head-color {
+.nohero .head-color .tophero {
 	position: fixed;
 }
 
