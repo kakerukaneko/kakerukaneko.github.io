@@ -40,6 +40,7 @@ body {
 	font-family: 'Rubik','Noto Sans Japanese',
 			'Hiragino Kaku Gothic Pro',
 			sans-serif;
+	background-color: var(--main-color);
 }
 
 body .top {
@@ -129,7 +130,7 @@ body .top {
     text-align: center;
   }
   body {
-    background-color: #fff;
+    background-color: var(--main-color);
   }
 }
 
@@ -991,38 +992,42 @@ header {
 }
 
 /* アレンジ: ヘッダーとヒーローイメージを一体化 */
-.head-hero {
+.head-fixed {
   background-color: transparent;
   color: #000;
 }
 
-.head-hero .headA {
+.head-fixed .headA {
   background-color: transparent;
   color: #000;
 }
 
-.head-hero .headC {
+.head-fixed .headC {
   color: #000;
   opacity: 1;
 }
 
 @media (max-width: 767px) {
-	.head-hero .headB {
-		background-color: rgba(0,0,0,0.6);
+	.head-fixed .headB {
+		background-color: #00afcc;
 	}
 
-  .head-hero {
+  .head-fixed {
     color: #fff;
   }
 }
 
 /* アレンジ: ヘッダーを画面上部に固定 */
-.head-color,
-.nohero .head-color .tophero {
+.head-fixed,
+.nohero .head-fixed {
 	position: fixed;
 }
 
-.nohero .head-color + * {
+.head-hero {
+	position: fixed;
+}
+
+.nohero .head-fixed + * {
 	margin-top: 20px;
 }
 
