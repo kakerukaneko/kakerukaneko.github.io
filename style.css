@@ -22,13 +22,13 @@
 
 @media (min-width: 600px) and (max-width: 799px) {
 	:root {
-		font-size: 16px;
+		font-size: 14px;
 	}
 }
 
 @media (min-width: 800px) {
 	:root {
-		font-size: 18px;
+		font-size: 16px;
 	}
 }
 
@@ -142,6 +142,7 @@ body .top {
 }
 
 /* ヘッダー */
+
 header {
 	position: absolute;
 	top: 0;
@@ -149,10 +150,6 @@ header {
 	z-index: 100;
 	width: 100%;
 	background-color: rgba(255,255,255,0.9);
-}
-
-.nohero header {
-	position: static;
 }
 
 /* ヘッダーA: サイト名 */
@@ -185,8 +182,11 @@ header {
 	text-decoration: none;
 }
 
-@media (min-width: 768px) {
+.headB a:hover {
+	background-color: rgba(0,0,0,0.3);
+}
 
+@media (min-width: 768px) {
 	header .container {
 		display: flex;
 		align-items: center;
@@ -199,15 +199,18 @@ header {
 
 	.headB ul {
 		display: flex;
-		color: black;
-		text-decoration: none;
 	}
-
-  .headB a:hover{
-    opacity: 0.6;
-    transition: 0.4s;
-  }
 }
+
+
+
+/*
+
+#menu-wrap {
+  position: fixed;
+  transition: .3s;
+}
+ */
 
 /* ヘッダーC: トグルボタン */
 
@@ -245,10 +248,53 @@ header {
 		display: none;
 	}
 
-	.headB {
+	#menu-wrap {
 		display: block !important;
 	}
 }
+
+/* アレンジ: ヘッダーとヒーローイメージを一体化*/
+
+.head-hero {
+	background-color: transparent;
+	color: var(--icon-color);
+	color: var(--text-bright-color);
+}
+
+.head-hero .headA {
+	background-color: transparent;
+	color: inherit;
+}
+
+.head-hero .headC {
+	color: inherit;
+	opacity: 1;
+}
+
+@media (max-width: 767px) {
+	.head-hero .headB {
+		background-color: rgba(0,0,0,0.6);
+	}
+}
+
+/* ヘッダーメニューを固定  */
+#menu-wrap {
+	position: fixed;
+  transition: .3s;
+	right: calc((50% - 400px) / 2);
+}
+/* ヘッダーを固定
+
+.head-hero,
+.nohero .head-hero {
+	position: fixed;
+}
+
+.nohero .head-hero + * {
+	margin-top: 700000px;
+}
+
+*/
 
 /* コンテンツページ: 記事 */
 .post .container {
@@ -375,59 +421,4 @@ header {
 		flex: 2;
 		padding: 50px;
 	}
-}
-
-/* アレンジ: ヘッダーの色 */
-.head-color {
-	background-color: #00afcc;
-	color: var(--text-bright-color);
-}
-
-.head-color .headA {
-	background-color: transparent;
-	color: inherit;
-}
-
-.head-color .headC {
-	color: inherit;
-}
-
-/* アレンジ: ヘッダーとヒーローイメージを一体化 */
-.head-fixed {
-  background-color: transparent;
-  color: #000;
-}
-
-.head-fixed .headA {
-  background-color: transparent;
-  color: #000;
-}
-
-.head-fixed .headC {
-  color: #000;
-  opacity: 1;
-}
-
-@media (max-width: 767px) {
-	.head-fixed .headB {
-		background-color: #00afcc;
-	}
-
-  .head-fixed {
-    color: #fff;
-  }
-}
-
-/* アレンジ: ヘッダーを画面上部に固定 */
-.head-fixed,
-.nohero .head-fixed {
-	position: fixed;
-}
-
-.head-hero {
-	position: fixed;
-}
-
-.nohero .head-fixed + * {
-	margin-top: 20px;
 }

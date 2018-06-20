@@ -6,97 +6,95 @@
   <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
   <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link href="normalize.css" rel="stylesheet">
   <link href="../style.css" rel="stylesheet">
   <script src="https:///use.fontawesome.com/926fe18a63.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-  <script >
+  <script>
     $(function(){
       $(".headC").click(function(){
         $(".headB").slideToggle();
       });
     });
-
-    var menuHeight = $("#menu-wrap").height();
-    var startPos = 0;
-    $(window).scroll(function(){
-      var currentPos = $(this).scrollTop();
-      if (currentPos > startPos) {
-        if($(window).scrollTop() >= 200) {
-          $("#menu-wrap").css("top", "-" + menuHeight + "px");
-        }
-      } else {
-        $("#menu-wrap").css("top", 0 + "px");
-      }
-      startPos = currentPos;
-    });
   </script>
 <html>
-<body class="nohero">
-  <header class="head-fixed">
-  <div class="container">
-    <div class="container-small">
-      <a href="../index.html" class="headA">SAMO</a>
+<body>
+  <header>
+    <div class="container">
+      <div class="container-small">
+        <a href="./" class="headA">TEST</a>
+        <button type="button" class="headC">
+          <span class="fa fa-bars" title="MENU"></span>
+        </button>
+      </div>
 
-      <button type="button" class="headC">
-        <span class="fa fa-bars" title="MENU"></span>
-      </button>
+      <nav class="headB">
+        <ul>
+          <li><a href="./about">About</a></li>
+          <li><a href="./work">Work</a></li>
+          <li><a href="./blog">Blog</a></li>
+          <li><a href="./contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-
-    <nav class="menu-wrap">
-      <ul id="menu">
-        <li><a href="./about">About</a></li>
-        <li><a href="./work">Work</a></li>
-        <li><a href="./blog">Blog</a></li>
-        <li><a href="./contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
   </header>
 
+  <article class="post">
+  <div class="container">
+    <img src="../photo/prof.jpg">
+  	<h1>About</h1>
 
-<article class="post">
-<div class="container">
-  <img src="../photo/prof.jpg">
-	<h1>About</h1>
+    <p>1995年6月24日生まれ 出身は東大阪で現在は横浜市在住</p>
+    <p></p>
 
-  <p>1995年6月24日生まれ 出身は東大阪市 現在は横浜市在住</p>
+    <h1>SKILL</h1>
 
-  <h1>SKILL</h1>
+    <p>Language: HTML CSS JavaScript Java PHP Ruby</p>
+    <p>DataBase: MySQL PostgreSQL</p>
+    <p>FrameWork: RubyonRails</p>
 
-  <p>Language: HTML CSS JavaScript Java PHP Ruby</p>
-  <p>DataBase: MySQL PostgreSQL</p>
-  <p>FrameWork: RubyonRails</p>
+    <h1>LIKE</h1>
 
-  <h1>LIKE</h1>
-
-<p>Art🖼 Book📚 Building🏛 Movie🎬 Music🎧</p>
-<p>好きな音楽はBill Evans <a href="https://www.youtube.com/watch?v=W3wq7ejawIA" class="menu-icon">「Waltz for Debby」<i class="fas fa-external-link-alt"></i></a>
-  、D'angelo<a href="https://www.youtube.com/watch?v=mcQ83tOZ4Wk" class="menu-icon">「Feel Like Makin' Love」<i class="fas fa-external-link-alt"></i></a></p>
-</div>
-</article>
-
-<aside class="history">
-<div class="container">
-	<div class="photo"></div>
-	<div class="text">
-		<h2>History</h2>
-		<table>
-		<tr>
-			<th>2014年</th>
-			<td>高校卒業後は地元の町工場に就職、ネジを見ただけで名前が分かるようになる。</td>
-		</tr>
-		<tr>
-			<th>2017年</th>
-			<td>司馬遼太郎の「竜馬がゆく」を見て脱藩に憧れ、退職。自分が好きなインターネットを生業にしようと専門校でプログラミングを学ぶ。</td>
-		</tr>
-    <tr>
-      <th>2018年6月</th>
-      <td>東京のとあるECサイトにアルバイトで、エンジニアとして働く事が決まった。</td>
-    </tr>
-		</table>
-	</div>
-</div>
-</aside>
+  <p>Art🖼 Book📚 Building🏛 Movie🎬 Music🎧</p>
+  <p>好きな音楽はBill Evans <a href="https://www.youtube.com/watch?v=W3wq7ejawIA" class="menu-icon">「Waltz for Debby」<i class="fas fa-external-link-alt"></i></a>
+    、D'angelo<a href="https://www.youtube.com/watch?v=mcQ83tOZ4Wk" class="menu-icon">「Feel Like Makin' Love」<i class="fas fa-external-link-alt"></i></a></p>
+  </div>
+  </article>
+  <aside class="history">
+  <div class="container">
+  	<div class="photo"></div>
+  	<div class="text">
+  		<h2>History</h2>
+  		<table>
+  		<tr>
+  			<th>2014年</th>
+  			<td>高校卒業後は地元の町工場に就職、ネジを見ただけで名前が分かるようになる。</td>
+  		</tr>
+  		<tr>
+  			<th>2017年</th>
+  			<td>司馬遼太郎の「竜馬がゆく」を見て脱藩に憧れ、退職。自分が好きなインターネットを生業にしようと専門校でプログラミングを学ぶ。</td>
+  		</tr>
+      <tr>
+        <th>2018年6月</th>
+        <td>東京のとあるECサイトにアルバイトで、エンジニアとして働く事が決まった。</td>
+      </tr>
+  		</table>
+  	</div>
+  </div>
+  </aside>
+  <script>
+  var menuHeight = $("#menu-wrap").height();
+  var startPos = 0;
+  $(window).scroll(function(){
+    var currentPos = $(this).scrollTop();
+    if (currentPos > startPos) {
+      if($(window).scrollTop() >= 200) {
+        $("#menu-wrap").css("top", "-" + menuHeight + "px");
+      }
+    } else {
+      $("#menu-wrap").css("top", 0 + "px");
+    }
+    startPos = currentPos;
+  });
+  </script>
 </body>
 </html>
