@@ -16,6 +16,20 @@
         $(".headB").slideToggle();
       });
     });
+
+    var menuHeight = $("#menu-wrap").height();
+    var startPos = 0;
+    $(window).scroll(function(){
+      var currentPos = $(this).scrollTop();
+      if (currentPos > startPos) {
+        if($(window).scrollTop() >= 200) {
+          $("#menu-wrap").css("top", "-" + menuHeight + "px");
+        }
+      } else {
+        $("#menu-wrap").css("top", 0 + "px");
+      }
+      startPos = currentPos;
+    });
   </script>
 <html>
 <body class="nohero">
@@ -29,8 +43,8 @@
       </button>
     </div>
 
-    <nav class="headB">
-      <ul>
+    <nav class="menu-wrap">
+      <ul id="menu">
         <li><a href="./about">About</a></li>
         <li><a href="./work">Work</a></li>
         <li><a href="./blog">Blog</a></li>
@@ -84,6 +98,5 @@
 	</div>
 </div>
 </aside>
-
 </body>
 </html>
