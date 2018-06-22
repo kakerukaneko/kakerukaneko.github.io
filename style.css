@@ -144,12 +144,19 @@ body .top {
 /* ヘッダー */
 
 header {
+	/* 6/22 固定解除*/
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 100;
 	width: 100%;
-	background-color: rgba(255,255,255,0.9);
+	background-color: var(--main-color);
+}
+
+.nohero .headC {
+	position: static;
+	border-bottom: solid 1px #ddd;
+	border-bottom: solid 1px var(--gray-color);
 }
 
 /* ヘッダーA: サイト名 */
@@ -248,7 +255,7 @@ header {
 		display: none;
 	}
 
-	#menu-wrap {
+	.headB {
 		display: block !important;
 	}
 }
@@ -277,24 +284,20 @@ header {
 	}
 }
 
-/* ヘッダーメニューを固定  */
-#menu-wrap {
-	position: fixed;
-  transition: .3s;
-	right: calc((50% - 400px) / 2);
-}
-/* ヘッダーを固定
-
-.head-hero,
-.nohero .head-hero {
+/* アレンジ: ヘッダーを画面上部に固定 */
+.head-fixed,
+.nohero .head-fixed {
 	position: fixed;
 }
 
-.nohero .head-hero + * {
-	margin-top: 700000px;
+.nohero .head-fixed + * {
+	margin-top: 70px;
 }
 
-*/
+/* 6/22　これであげれるけど・・・。*/
+.container img {
+	padding-top: 50px;
+}
 
 /* コンテンツページ: 記事 */
 .post .container {
