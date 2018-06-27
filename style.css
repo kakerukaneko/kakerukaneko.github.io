@@ -48,9 +48,6 @@ body .top {
 }
 
 /* コンテンツA: ヒーローイメージ*/
-.bk-img {
-  display: none;
-}
 
 .conA {
 	display: flex;
@@ -58,7 +55,9 @@ body .top {
 	justify-content: center;
 	height: 100vh;
 	min-height: 450px;
-  background-color: var(--icon-color);
+	background-image: linear-gradient(
+		rgba(0,0,0,0.1), rgba(0,0,0,0.1)
+		), url(photo/kanagawa.jpg);
 	background-position: center;
 	background-size: cover;
 	color: var(--icon-color);
@@ -79,6 +78,10 @@ body .top {
 	margin-top: 0;
 	margin-bottom: 0;
 	font-size: 18px;
+}
+
+.conA img {
+	width: 20%;
 }
 
 .conA a {
@@ -104,34 +107,12 @@ body .top {
 
 /* 768px 以上になったら発動*/
 @media (min-width: 768px) {
-  .bk-img {
-    display: inline;
-  }
 	.conA h1 {
 		font-size: 115px;
 	}
 	.conA p {
 		font-size: 24px;
 	}
-  .conA img {
-    max-width: 500px;
-  }
-  .conA {
-    background: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    min-height: 450px;
-    background-position: center;
-    background-size: cover;
-    color: var(--icon-color);
-    color: var(--text-bright-color);
-    text-align: center;
-  }
-  body {
-    background-color: var(--icon-color);
-  }
 }
 
 /* フッターC: コピーライト */
@@ -150,7 +131,8 @@ header {
 	left: 0;
 	z-index: 100;
 	width: 100%;
-	background-color: var(--main-color);
+	/* 6/27 ヘッダーのロゴ以外が全て変わる*/
+	background-color: rgba(0, 175, 204, 0.55);
 }
 
 .nohero .headC {
@@ -165,8 +147,11 @@ header {
 	line-height: 60px;
 	padding-left: 20px;
 	padding-right: 20px;
-	background-color: #5D9AB2;
-	background-color: var(--main-color);
+	/*
+background-color: #5D9AB2;
+	 これでサイト名の背景を変更できる
+	 */
+	background-color: rgba(0, 175, 204, 0.55);
 	color: #fff;
 	color: var(--text-bright-color);
 	font-family: 'Montserrat', sans-serif;
@@ -208,16 +193,6 @@ header {
 		display: flex;
 	}
 }
-
-
-
-/*
-
-#menu-wrap {
-  position: fixed;
-  transition: .3s;
-}
- */
 
 /* ヘッダーC: トグルボタン */
 
