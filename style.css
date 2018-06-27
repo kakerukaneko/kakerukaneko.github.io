@@ -265,10 +265,12 @@ header {
 	margin-top: 70px;
 }
 
-/* 6/22　これであげれるけど・・・。*/
+/* 6/22　これであげれるけど・・・。
+6/27 変な隙間きになるわ・・。
 .container img {
-	padding-top: 70px;
+	padding-top: 700px;
 }
+*/
 
 /* コンテンツページ: 記事 */
 .post .container {
@@ -295,6 +297,11 @@ header {
 
 .post img {
 	max-width: 100%;
+}
+
+.post a {
+	/* 6/27 好きな曲のリンク*/
+	font-size: 15px;
 }
 
 /* コンテンツページ: パンくずリスト */
@@ -374,6 +381,7 @@ header {
 	color: black;
 	text-decoration: none;
 }
+
 .menu-icon {
 	 font-size: 20px;
 }
