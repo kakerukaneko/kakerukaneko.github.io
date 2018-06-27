@@ -151,7 +151,8 @@ header {
 background-color: #5D9AB2;
 	 これでサイト名の背景を変更できる
 	 */
-	background-color: rgba(0, 175, 204, 0.55);
+	/* 6/27 ヘッダーと透過率が違う・・。　*/
+	background-color: rgba(0, 175, 204, 0.05);
 	color: #fff;
 	color: var(--text-bright-color);
 	font-family: 'Montserrat', sans-serif;
