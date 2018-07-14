@@ -299,7 +299,7 @@ header {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	background-position: center center;
+	object-fit: cover;
 }
 
 .post a {
