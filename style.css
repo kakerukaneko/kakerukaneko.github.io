@@ -62,6 +62,8 @@ body .top {
 	background-size: cover;
 	color: var(--icon-color);
 	text-align: center;
+	/* 7/16 背景固定 */
+	background-attachment: fixed;
 }
 
 .conA h1 {
