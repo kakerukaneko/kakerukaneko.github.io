@@ -62,8 +62,6 @@ body .top {
 	background-size: cover;
 	color: var(--icon-color);
 	text-align: center;
-	/* 7/16 背景固定 */
-	background-attachment: fixed;
 }
 
 .conA h1 {
@@ -108,6 +106,10 @@ body .top {
 
 /* 768px 以上になったら発動*/
 @media (min-width: 768px) {
+	/* 7/16 背景固定 */
+	.conA {
+		background-attachment: fixed;
+	}
 	.conA h1 {
 		font-size: 115px;
 	}
