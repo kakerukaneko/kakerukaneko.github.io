@@ -4,15 +4,17 @@ body {
 	font-size: 20px;
 }
 
+.over-wrapper {
+	width: 100%;
+	text-align: center;
+}
+
 header {
 	font-size: 20px;
 	text-align: center;
 }
 
-.over-wrapper {
-	width: 100%;
-}
-
+/* Profile */
 .color {
 	width: 100px;
 	height: 100px;
@@ -48,3 +50,5 @@ header {
 	background-color: #963D97;
 	display: block;
 }
+
+/* sns */
