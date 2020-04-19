@@ -1,2 +1,2 @@
-### This is my site
+### This is my site.
 https://kakqun.github.io
