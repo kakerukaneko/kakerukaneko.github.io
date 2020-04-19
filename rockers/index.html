@@ -1,1 +1,83 @@
-<h1>HELLO WORLD</h1>
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.ico" >
+  <title>ROCKERS Hairdesign Studio</title>
+</head>
+<html>
+  <body>
+  <div class="wrapper"  id="home">
+    <div class="top-content">
+        <h1><a href="/"><span>ROCKERS</span> Hairdesign Studio</a></h1>
+        <img id="img-slide" src="img/door.jpg">
+    </div>
+    <div class="price" id="price">
+      <h1>PRICE</h1>
+      <ul class="plice-list">
+        <li>CUT <p>¥5,500</p></li>
+        <li>COLOR <p>¥6,600</p></li>
+        <li>PERMANENT <p>¥7,700</p></li>
+        <li>CARE BLEACH <p>¥7,700</p></li>
+        <li>DESIGN COLOR <p>¥11,000~</p></li>
+        <li>DESIGN PERM <p>¥11,000~</p></li>
+      </ul>
+      <p class="student-discout">ALL STUDENT 10%OFF!!</p>
+    </div>
+    <div class="information" id="information">
+      <h1>INFORMATION</h1>
+      <div class="location">
+        <span>Location <p><a href="https://www.google.co.jp/maps/place/神奈川県藤沢市片瀬海岸1-13-8">神奈川県藤沢市片瀬海岸 1-13-8</a></p></span>
+        <iframe src="https://maps.google.com/maps?q=rockers%20cut%20club&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      </div>
+      <div class="tel">
+        <span>TEL <p><a href="tel:08013290814">080-1329-0814</a></p></span>
+      </div>
+      <div class="business-open">
+        <span>Open <p>Weekday  10:00~20:00</p></span>
+        <span>　<p>Sat・Sun 9:00~19:00</p></span>
+      </div>
+      <div class="business-close">
+        <span>Close <p>Tuesday</p></span>
+      </div>
+      <div class="payment">
+        <span>Credit Card<p>OK</p></span>
+      </div>
+    </div>
+    <div class="reserve" id="reserve">
+      <h1>We'll be waiting for you!!</h1>
+      <div>
+        <a href="https://forms.gle/VSyMyEgke9s1y8Hy6" class="btn-receive">RESERVE</a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="copyright">© 2020 ROCKERS Hairdesign Studio</div> 
+    <div class=menu>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#price">PRICE</a></li>
+        <li><a href="#information">INFORMATION</a></li>
+        <li><a href="#reserve">RESERVE</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    var images = ["img/chair.jpg", "img/floor.jpg", "img/vynil_sit.jpg", "img/door.jpg"];
+    var i = 0;
+    var time = 3500;
+
+    function imgSlider() {
+      document.getElementById('img-slide').src = images[i];
+
+      if(i < images.length - 1) {
+        i++;
+      } else {
+        i = 0;
+      }
+    }
+    setInterval(imgSlider, time);
+  </script>  
+</body>

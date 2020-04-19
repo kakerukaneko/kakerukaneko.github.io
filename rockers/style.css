@@ -1,0 +1,200 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+	font-family: "Vollkorn",serif;
+	background-color: #fffdee;
+}
+
+.wrapper {
+    color: #e5430b;
+    font-family: 'Sriracha', cursive;
+    margin: 0 5px;
+    min-width: 300px;
+}
+
+/* for PC */
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 800px;
+        margin: 0 auto 0;
+    }
+}
+
+.wrapper h1 {
+    font-family: 'Sriracha', cursive;
+    color: #e5430b;
+}
+
+/* top content */
+.top-content {
+
+}
+
+.top-content span {
+	font-size: 2.25rem;
+	font-weight: bold;
+}
+
+.top-content a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .top-content span {
+        font-size: 3.25rem;
+    }
+}
+
+.top-content h1 {
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+.top-content img {
+	width: 100%;
+    height: 100%;
+}
+
+/* price */
+.price {
+    font-size: 20px;
+}
+
+.price h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.student-discout {
+    text-align: center;
+    font-size: 15px;
+}
+
+.plice-list li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #b7b6b3;
+    margin-bottom: 15px;
+}
+
+.plice-list li:last-child {
+    margin-bottom: 10px;
+}
+
+/* information */
+.information {
+    font-size: 20px;
+}
+
+.information h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.information p {
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.information a {
+    color: inherit;
+}
+
+.information iframe {
+    width: 100%;
+    height: 200px;
+}
+
+.information div {
+    border-bottom: 1px dashed #b7b6b3;
+}
+
+.information div span{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* receive */
+
+.reserve {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.reserve h1{
+    font-size: 20px;
+}
+
+.btn-receive {
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(45deg, #FFC107 0%, #e5430b 100%);
+    transition: .4s;
+}
+  
+  .btn-receive:hover {
+    background-image: linear-gradient(45deg, #FFC107 0%, #e5430b 100%);
+}
+
+/* footer */
+footer {
+    height: 100px;
+    background: #252e36;
+    color: #fff;
+}
+
+footer .copyright {
+    font-size: 10px;
+    color: #b3b3b1;
+    text-align: center;
+    padding-top: 5px;
+}
+
+footer .menu {
+    font-size: 13px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+footer .menu a{
+    color: inherit;
+    text-decoration: none;
+}
+
+footer .menu li{
+    display: inline;
+}
+
+footer .menu li:after{
+    content: "/";
+    margin-left: 5px;
+}
+
+footer .menu li:last-child:after{
+    content: "";
+}
