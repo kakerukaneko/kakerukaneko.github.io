@@ -74,6 +74,10 @@ header {
 	color: #AD5C51;
 }
 
+.sns #facebook a:hover {
+	color: #3B5998;
+}
+
 /* for PC design */
 @media screen and (min-width:480px) {
 	html, body {
