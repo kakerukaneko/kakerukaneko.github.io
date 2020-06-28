@@ -73,3 +73,20 @@ header {
 .sns #github a:hover {
 	color: #333;
 }
+
+/* for PC design */
+@media screen and (min-width:480px) {
+	html, body {
+		height: 100%;
+	}
+
+	.over-wrapper {
+		position: absolute;
+		top: 40%;
+		-webkit-transform: translateY(-50%);
+	}
+
+	.sns {
+		position: unset;
+	}
+}
