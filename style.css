@@ -77,6 +77,10 @@ header {
 	color: #3B5998;
 }
 
+.sns #note a:hover {
+	color: #41C9B4;
+}
+
 /* for PC design */
 @media screen and (min-width:480px) {
 	html, body {
