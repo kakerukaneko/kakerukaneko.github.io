@@ -21,11 +21,10 @@ header {
 
 /* Profile */
 .color {
-	width: 100px;
-	height: 100px;
+	width: 200px;
+	height: 200px;
 	margin: auto;
-	background: linear-gradient(to top,#3c3b5f,#fd5e53);
-    border-radius: 50%;
+	background-image: url("./image/sunset.jpg");
 }
 
 .text p:first-child {
