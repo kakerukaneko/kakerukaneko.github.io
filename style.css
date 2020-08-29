@@ -1,5 +1,12 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Caveat&display=swap'); */
+
+html * {
+  visibility: hidden;
+}
+html.wf-active *{
+    visibility: visible;
+}
 
 body {
 	font-size: 30px;
