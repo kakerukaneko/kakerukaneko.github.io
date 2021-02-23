@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* @import url('https://fonts.googleapis.com/css?family=Caveat&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 
+.company-font {
+	font-family: 'Yeseva One', cursive;
+}
 html * {
   visibility: hidden;
 }
